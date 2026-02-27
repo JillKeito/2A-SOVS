@@ -6,18 +6,20 @@
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: flex-end; /* changed from center to the right side */
+  justify-content: end; /* changed from center to the right side */
   align-items: center;
-  padding-right: 60px; /* added padding sa right */
 }
 
 .login-card {
-  background: rgb(245, 236, 236);
-  backdrop-filter: blur(10px);
-  border-radius: 45px;
-  padding: 40px 30px;
+  background: rgb(219, 219, 219);
+  padding: 60px 50px;   /* gi increased na ang padding */
   width: 100%;
-  max-width: 380px;
+  max-width: 580px; /* increased from 380px */
+  height: 730px;/* increased from 500px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center; 
   text-align: center;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   border: 1px solid #ddd;
@@ -27,7 +29,7 @@
 .login-card h1 {
   margin-top: 0;
   margin-bottom: 5px;
-  color: #f5ebeb;
+  color: #070707;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
   background: transparent;
@@ -36,14 +38,14 @@
 .subtitle {
   margin-top: 0;
   margin-bottom: 25px;
-  color: rgb(242, 236, 236);
-  font-size: large;
+  color: rgb(15, 14, 14);
+  font-size: medium;
 }
 
 .input-group {
   display: flex;
   align-items: center;
-  background: rgba(247, 242, 242, 0.945);
+  background: rgba(0, 0, 0, 0.277);
   border-radius: 8px;
   padding: 10px 12px;
   margin-bottom: 15px;
@@ -52,7 +54,7 @@
 .input-group .icon {
   margin-right: 10px;
   font-size: 20px;
-  color: rgb(244, 240, 240);
+  color: rgb(16, 15, 15);
 }
 
 .input-group input {
@@ -68,7 +70,7 @@
   padding: 12px;
   border: none;
   border-radius: 8px;
-  background: #385bf3;
+  background: #262f58;
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -78,30 +80,24 @@
 
 .login-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 15px rgba(244, 244, 247, 0.2);
+  box-shadow: 0 8px 15px rgba(102, 126, 234, 0.2);
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.login-header {
-  display: flex;
-  flex-direction: column; /* THIS MAKES IT VERTICAL */
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .logo {
-  width: 120px;
+  width: 200px;   /* bigger logo */
   height: auto;
-  margin-bottom: 5px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  object-fit: contain;
+  height: auto;
+}
+
+.input-group input::placeholder {
+  color: #2222229c;
+  opacity: 1;
 }
